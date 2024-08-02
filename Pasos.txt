@@ -1,0 +1,10 @@
+https://dvc.org/doc/start
+dvc init
+git status
+git commit -m "Initialize DVC"
+dvc add data/data.xml
+git add data/data.xml.dvc data/.gitignore
+git commit -m "Add raw data"
+dvc add data
+dvc remote add myremote gdrive://0AIac4JZqHhKmUk9PDA
+dvc remote default myremote
